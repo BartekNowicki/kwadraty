@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $page-background-color;
+  font-family: arial;  
+  border: 1px solid black;
+}
+
+.mainWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  border: 1px solid gray;
+  background-color: $game-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  @media only screen and (orientation: landscape) {
+    width: 30vw;
+  }
+}
+
