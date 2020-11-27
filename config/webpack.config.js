@@ -18,6 +18,42 @@ module.exports = {
     compress: true,
     hot: true,
   },
+
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.ttf$/i,
+  //       use: [
+  //         {
+  //           loader: 'url-loader',
+  //           options: {
+  //             encoding: 'binary',
+  //           },
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+
+
+//   module: {
+//     rules: [
+//       {
+//           test: /\.ttf$/,
+//           use: [
+//             {
+//               loader: 'ttf-loader',
+//               options: {
+//                 name: './font/[hash].[ext]',
+//               },
+//             },
+//           ]
+//       }
+//     ]
+//  },
+
+
+
   module: {
     rules: [
       {
@@ -36,6 +72,25 @@ module.exports = {
         test: /\.(jpg|png|svg|gif|jpeg)$/,
         use: 'file-loader',
       },
+
+
+      {
+        test: /\.(ttf)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
+
+
+
+
+
       {
         test: /\.js$/,
         loader: 'babel-loader',

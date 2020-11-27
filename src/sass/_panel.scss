@@ -1,9 +1,17 @@
+  @font-face {
+    font-family: DIGITALDREAM;
+    src: url('../assets/DIGITALDREAM.ttf') format("ttf");
+    src: url('../assets/DIGITALDREAM.ttf') format("ttf"), 
+         url('../assets/DIGITALDREAM.ttf') format('truetype');         
+  }
+
 .panel {
     display: flex;
     background-color: $panel-background-color;
     border: 5px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;    
+    // font-family: Arial, Helvetica, sans-serif;    
+    font-family: "DIGITALDREAM";
     font-weight: 700;
     box-shadow: 0 0 5px 5px rgba(128, 255, 0, 0.2);
     font-size: 3vh;

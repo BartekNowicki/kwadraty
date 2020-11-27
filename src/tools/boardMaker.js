@@ -39,7 +39,7 @@ export default class {
               let color = this.getColor(this.squares[row][column]);
               if (this.getColor(this.squares[row+1][column]) === color) {
                  this.squaresGoingOut[row+1][column] = true;
-                 console.log('my lower row buddy goes out too!');
+                //  console.log('my lower row buddy goes out too!');
               }
           }
       }
@@ -50,7 +50,7 @@ export default class {
               let color = this.getColor(this.squares[row][column]);
               if (this.getColor(this.squares[row-1][column]) === color) {
                  this.squaresGoingOut[row-1][column] = true;
-                 console.log('my higher row buddy goes out too!');
+                //  console.log('my higher row buddy goes out too!');
               }
           }
       }
@@ -61,7 +61,7 @@ export default class {
               let color = this.getColor(this.squares[row][column]);
               if (this.getColor(this.squares[row][column+1]) === color) {
                  this.squaresGoingOut[row][column+1] = true;
-                 console.log('my right hand side column buddy goes out too!');
+                //  console.log('my right hand side column buddy goes out too!');
               }
           }
       }
@@ -73,7 +73,7 @@ export default class {
               let color = this.getColor(this.squares[row][column]);
               if (this.getColor(this.squares[row][column-1]) === color) {
                  this.squaresGoingOut[row][column-1] = true;
-                 console.log('my left hand side column buddy goes out too!');
+                //  console.log('my left hand side column buddy goes out too!');
               }
           }
       }
